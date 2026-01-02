@@ -1,0 +1,34 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment (root level)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+
+# Logs
+*.log
+logs/
+
+# Model cache
+.cache/

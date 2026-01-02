@@ -1,0 +1,28 @@
+# Core
+flask==3.0.0
+flask-cors==4.0.0
+flask-socketio==5.3.6
+python-dotenv==1.0.0
+gunicorn==21.2.0
+eventlet==0.34.2
+
+# AI/ML Services
+groq==0.4.2
+pinecone-client==3.0.0
+sentence-transformers>=2.7.0
+huggingface_hub>=0.20.0
+
+# TTS - Install separately: pip install git+https://github.com/tronghieuit/valtec-tts.git
+# valtec-tts requires PyTorch 2.0+
+
+# Authentication
+PyJWT==2.8.0
+bcrypt==4.1.2
+
+# Audio Processing
+pydub==0.25.1
+numpy>=1.26.0
+scipy>=1.11.0
+
+# HTTP Client
+requests==2.31.0
