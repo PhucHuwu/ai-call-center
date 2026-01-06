@@ -13,7 +13,7 @@ import { CallSession, TranscriptMessage } from "@/types";
 import { getAuthHeaders } from "@/services/auth";
 import { useSocket } from "@/contexts/SocketContext";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3724";
 
 export default function CallDetailPage() {
     const params = useParams();

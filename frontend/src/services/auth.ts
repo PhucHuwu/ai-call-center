@@ -1,6 +1,6 @@
 import Cookies from "js-cookie";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3724";
 const TOKEN_KEY = "auth_token";
 
 export interface LoginResponse {

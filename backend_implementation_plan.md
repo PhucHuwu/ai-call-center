@@ -137,7 +137,7 @@ load_dotenv()
 class Config:
     # Flask
     FLASK_ENV = os.getenv("FLASK_ENV", "development")
-    FLASK_PORT = int(os.getenv("FLASK_PORT", 5000))
+    FLASK_PORT = int(os.getenv("FLASK_PORT", 3724))
 
     # Groq
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
@@ -820,11 +820,11 @@ PINECONE_API_KEY=your_pinecone_api_key_here
 PINECONE_INDEX_NAME=ai-call-center
 
 # TTS Service
-TTS_SERVICE_URL=http://localhost:5001
+TTS_SERVICE_URL=http://localhost:3724
 
 # Flask
 FLASK_ENV=development
-FLASK_PORT=5000
+FLASK_PORT=3724
 ```
 
 ---
@@ -865,8 +865,8 @@ cd valtec-tts && python app.py &
 cd backend && python run.py &
 
 # Test endpoints
-curl http://localhost:5000/api/health
-curl -X POST http://localhost:5000/api/chat \
+curl http://localhost:3724/api/health
+curl -X POST http://localhost:3724/api/chat \
   -H "Content-Type: application/json" \
   -d '{"message": "iPhone 15 giá bao nhiêu?"}'
 ```
@@ -875,7 +875,7 @@ curl -X POST http://localhost:5000/api/chat \
 
 1. **Health Check:**
 
-    - Truy cập `http://localhost:5000/api/health`
+    - Truy cập `http://localhost:3724/api/health`
     - Verify tất cả services hiển thị "connected" hoặc "available"
 
 2. **Chat API:**
@@ -895,7 +895,7 @@ curl -X POST http://localhost:5000/api/chat \
 2. **API Keys:**
     - Groq API Key (https://console.groq.com)
     - Pinecone API Key (https://www.pinecone.io)
-3. **valtec-tts service** running on port 5001
+3. **valtec-tts service** running on port 3724
 4. **Data files** trong `data/` folder
 
 ---

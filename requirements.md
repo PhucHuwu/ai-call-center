@@ -221,12 +221,12 @@ PINECONE_API_KEY=your_pinecone_api_key
 PINECONE_INDEX_NAME=ai-call-center
 
 # TTS Service
-TTS_SERVICE_URL=http://localhost:5001  # hoặc URL của valtec-tts
+TTS_SERVICE_URL=http://localhost:3724  # hoặc URL của valtec-tts
 
 # App Config
 FLASK_ENV=development
-FLASK_PORT=5000
-NEXT_PUBLIC_API_URL=http://localhost:5000
+FLASK_PORT=3724
+NEXT_PUBLIC_API_URL=http://localhost:3724
 ```
 
 ---

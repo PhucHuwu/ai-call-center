@@ -7,7 +7,7 @@ load_dotenv()
 class Config:
     # Flask
     FLASK_ENV = os.getenv("FLASK_ENV", "development")
-    FLASK_PORT = int(os.getenv("FLASK_PORT", 5000))
+    FLASK_PORT = int(os.getenv("FLASK_PORT", 3724))
 
     # Groq
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")

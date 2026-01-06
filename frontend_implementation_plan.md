@@ -160,7 +160,7 @@ npx shadcn-ui@latest add button card avatar scroll-area
 **[NEW] `frontend/.env.local`**
 
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_API_URL=http://localhost:3724
 ```
 
 ---
@@ -525,7 +525,7 @@ export function useCallState(): UseCallStateReturn {
 **[NEW] `frontend/src/services/api.ts`**
 
 ```typescript
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3724";
 
 export interface VoiceResponse {
     audioBlob: Blob;
@@ -1388,7 +1388,7 @@ export interface SocketEvents {
 ```typescript
 import Cookies from "js-cookie";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3724";
 const TOKEN_KEY = "auth_token";
 
 export interface LoginResponse {
@@ -1460,7 +1460,7 @@ export function getAuthHeaders(): HeadersInit {
 import { io, Socket } from "socket.io-client";
 import { getToken } from "./auth";
 
-const SOCKET_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const SOCKET_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3724";
 
 let socket: Socket | null = null;
 
@@ -1977,7 +1977,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { ArrowLeft, Send, Bot, User, HandMetal, Undo2 } from "lucide-react";
 import { getAuthHeaders } from "@/services/auth";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3724";
 
 export default function CallDetailPage() {
     const { id } = useParams();
@@ -2183,7 +2183,7 @@ export function ResponderIndicator({ responder, className = "" }: ResponderIndic
 ```typescript
 import { getAuthHeaders } from "./auth";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3724";
 
 export interface VoiceResponse {
     audioBlob: Blob;
@@ -2261,7 +2261,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 ## Environment Variables - Updated
 
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_API_URL=http://localhost:3724
 ```
 
 ---
